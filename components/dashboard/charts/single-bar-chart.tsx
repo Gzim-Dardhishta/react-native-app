@@ -52,7 +52,7 @@ export const SingleBarChart = ({
                     fontSize: 12,
                     marginTop: 5,
                     color: '#808080',
-                    fontFamily: 'FiraCode-Regular',
+                    // fontFamily: 'FiraCode-Regular',
                     textTransform: 'lowercase',
                 }}
             >

@@ -1,4 +1,3 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
@@ -30,7 +29,12 @@ export default function RootLayout() {
   return (
     <SafeAreaView style={{ backgroundColor: '#111' }}>
       <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        <Stack.Screen name="index" options={{ headerShown: false, title: 'Home' }} />
+
+        <Stack.Screen
+          name="(links)"
+          options={{ headerShown: true }}
+        />
         <Stack.Screen name="(auth)" options={{ headerShown: false }} />
         <Stack.Screen name="(dashboard)" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" />

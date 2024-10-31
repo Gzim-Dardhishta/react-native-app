@@ -101,7 +101,6 @@ export const WeeklyBarChart = ({
 const styles = StyleSheet.create({
     label: {
         color: '#808080',
-        fontSize: 14,
-        fontFamily: 'FiraCode-Regular',
+        fontSize: 14
     },
 });

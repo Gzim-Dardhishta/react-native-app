@@ -4,6 +4,7 @@ import DashboardHeader from './DashboardHeader';
 import SalesCard from './SalesCard';
 import { WeeklyBarChart } from './charts';
 import { BACKGROUND_COLOR, data } from './constants';
+import Sales from './sales/Sales';
 
 const DashboardPage = () => {
     const [activeWeekIndex, setActiveWeekIndex] = useState(0);
@@ -17,6 +18,7 @@ const DashboardPage = () => {
                 activeWeekIndex={activeWeekIndex}
                 onWeekChange={setActiveWeekIndex}
             />
+            <Sales />
         </View>
     )
 }

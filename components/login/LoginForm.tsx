@@ -38,7 +38,7 @@ const LoginForm = () => {
       </View>
 
       <Button
-        onPress={() => router.push('/')}
+        onPress={() => router.push('/dashboard')}
         title="Login"
         color="#841584"
         accessibilityLabel="Learn more about this purple button"
